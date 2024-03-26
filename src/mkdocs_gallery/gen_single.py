@@ -1226,7 +1226,7 @@ EXAMPLE_HEADER = """
 
 !!! note
 
-    Click [here]({download_link})
+    Click [here]({download_link}){{ download }}
     to download the full example code{opt_binder_text}
 
 """  # TODO there was a {{: .mkd-glr-example-title }} for the title but is it useful ?
@@ -1357,7 +1357,7 @@ def get_example_md_wrapper(
 
 {binder_badge_md}
 
-[{icon} Download Python source code: {script.dwnld_py_file.name}](./{script.dwnld_py_file.name}){{ .md-button .center}}
+[{icon} Download Python source code: {script.dwnld_py_file.name}](./{script.dwnld_py_file.name}){{ .md-button .center download}}
 """
 
     md_before = EXAMPLE_HEADER.format(
