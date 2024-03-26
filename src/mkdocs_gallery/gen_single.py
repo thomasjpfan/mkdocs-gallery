@@ -1226,8 +1226,8 @@ EXAMPLE_HEADER = """
 
 !!! note
 
-    Click [here]({download_link}){{ download="{file_name}" }}
-    to download the full example code{opt_binder_text}
+    Click [here to download]({download_link}){{ download="{file_name}" }}
+    the full example code{opt_binder_text}
 
 """  # TODO there was a {{: .mkd-glr-example-title }} for the title but is it useful ?
 MD_BLOCK_HEADER = """\
